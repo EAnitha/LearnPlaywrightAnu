@@ -5,9 +5,9 @@ test('verify admin can create employment status', async ({ page }) => {
     // launch url goto
     await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
     // enter user name
-    await page.locator("input[name='username']").fill("Admin")
+    await page.locator("input[name='username']").fill(process.env.App_USERNAME)
     // enter password
-    await page.locator("input[name='password']").fill("admin123")
+    await page.locator("input[name='password']").fill(process.env.APP_PASSWORD)
     // click on login
     await page.locator("button[type='submit']").click()
     // verify url 
