@@ -10,7 +10,7 @@ const employees = { // data driven testing using json
   emp3: { firstName: "Ammu", lastName: "E" }
 }
 for (let emp in employees) {
-  test(`verify admin can create employee with mandatory fields: ${employees[emp].firstName} ${employees[emp].lastName}`, async ({ page }) => {
+  test(`verify admin can create employee with mandatory fields: ${emp}`, async ({ page }) => {
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
     await page.getByRole('textbox', { name: 'Username' }).click();
     await page.getByRole('textbox', { name: 'Username' }).fill(logindata.username);

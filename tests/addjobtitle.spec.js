@@ -7,7 +7,7 @@ const jobTitles = {
 
 }
 for(let jobTitle in jobTitles){
-test(`Verify admin can add job title: ${jobTitles[jobTitle]}`, async ({ page }) => {
+test(`Verify admin can add job title: ${jobTitle}`, async ({ page }) => {
   await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
   await page.getByRole('textbox', { name: 'Username' }).click();
   await page.getByRole('textbox', { name: 'Username' }).fill(process.env.APP_USERNAME);
