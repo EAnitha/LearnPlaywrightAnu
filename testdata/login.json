@@ -1,4 +1,5 @@
 {
-    "username": "Admin",
-    "password": "admin123"
+    
+    "invalidUsername": "dfgggh",
+    "invalidPassword": "wrong123"
 }

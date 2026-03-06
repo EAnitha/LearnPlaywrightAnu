@@ -101,22 +101,7 @@
 
 
 
-// splice()- used to add or remove elements from an array
-// array.splice(startIndex, deleteCount, item1, item2...)
 
-let num = [10, 20, 30, 40, 50]
-
-let removed = num.splice(2, 2)
-
-console.log(num);
-console.log(removed);
-
-// 
-let colors = ["Red", "Blue", "Green"];
-
-colors.splice(1, 0, "Yellow");
-
-console.log(colors);
 
 //slice()- is used to create a copy of an array or a portion of an array without modifying the original array
 // array.slice(startIndex, endIndex)
@@ -137,6 +122,24 @@ let result = numbers.slice(1, 4);
 console.log(result);
 console.log(numbers);
 
+
+
+// splice()- used to add or remove elements from an array
+// array.splice(startIndex, deleteCount, item1, item2...)
+
+let num = [10, 20, 30, 40, 50]
+
+let removed = num.splice(2, 2)
+
+console.log(num);
+console.log(removed);
+
+// 
+let colors = ["Red", "Blue", "Green"];
+
+colors.splice(1, 0, "Yellow");
+
+console.log(colors);
 // reduce() is used to reduce an array to a single value by applying a function to each element of the array
 // array.reduce((accumulator, currentValue) => {
 //    return accumulator + currentValue;
