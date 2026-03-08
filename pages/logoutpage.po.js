@@ -17,8 +17,9 @@ export class logoutPage {
         this.editBtn = page.locator('(//i[@class="oxd-icon bi-pencil-fill"])[3]')
         this.middleName = page.locator('//input[@name="middleName"]')
         this.saveBtn = page.locator('(//button[@type="submit"])[1]')
+        this.deleteBtn = page.locator('(//i[@class="oxd-icon bi-trash"])[1]')
+        this.confirmDeleteBtn = page.locator('//button[@class="oxd-button oxd-button--medium oxd-button--label-danger orangehrm-button-margin"]')
     }
-
     async logout() {
         await this.userProfile.click()
         await this.logourBtn.click()
@@ -51,5 +52,11 @@ export class logoutPage {
     }
     async verifyEmpMName(){
         await expect(this.middleName).toBeVisible()
+    }
+    async deleteEmployee(){
+        await this.PIMLink.click()
+        await this.deleteBtn.click()
+        await this.confirmDeleteBtn.click()
+
     }
 }

@@ -51,6 +51,10 @@ test('verify user can edit middle name', async () => {
     await logout.editEmployee("gjhjhj")
     await logout.verifyEmpMName()
 });
+
+test('verify user can delete employee', async()=> {
+    await logout.deleteEmployee()
+})
 test('user able to logout', async () => {
     await logout.logout();
  });
