@@ -56,6 +56,6 @@ test('verify user can delete employee', async()=> {
     await logout.deleteEmployee()
 })
 test('user able to logout', async () => {
-    await logout.logout();
- });
+    await logout.logout()
+ })
 
